@@ -2,26 +2,26 @@
 using namespace std;
 
 void countFreq(int arr[], int n) {
-    // Create a boolean array to mark visited elements
+   
     bool visited[100] = {false};
 
-    // Go through each element
+    
     for (int i = 0; i < n; i++) {
-        // If already counted, skip
+        
         if (visited[i])
             continue;
 
         int count = 1;
 
-        // Count how many times arr[i] appears
+       
         for (int j = i + 1; j < n; j++) {
             if (arr[i] == arr[j]) {
-                visited[j] = true; // Mark as counted
+                visited[j] = true; 
                 count++;
             }
         }
 
-        // Print the number and how many times it appeared
+   
         cout << arr[i] << " appears " << count << " times" << endl;
     }
 }
