@@ -6,7 +6,7 @@ using namespace std;
 int main() {
     vector<string> words = {"banana", "apple", "mango", "grape"};
 
-    // Sort in lexicographical order
+    
     sort(words.begin(), words.end());
 
     cout << "Words in lexicographical order:\n";

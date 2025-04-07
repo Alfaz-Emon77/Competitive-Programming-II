@@ -21,3 +21,4 @@ int main ()
     if(Q.empty()) cout << "Q is empty" << endl; // this is the proper way 
       
     return 0; 
+}
