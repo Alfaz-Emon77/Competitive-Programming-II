@@ -3,26 +3,26 @@
 using namespace std; 
 int main () 
 { 
-stack< int > mystack; 
-// lets push and pop some values 
-for (int i=0; i<5; i++) mystack.push(i); 
+stack< int >stack; 
+
+for (int i=0; i<5; i++) stack.push(i); 
 cout << "Popping out elements..."; 
-while (!mystack.empty()) 
+while (!stack.empty()) 
 { 
-cout << " " << mystack.top(); 
-mystack.pop(); 
+cout << " " << stack.top(); 
+stack.pop(); 
 } 
 cout << endl; 
-// changing the value of top 
-    mystack.push(100); 
-    mystack.top() += 1000; 
-    cout << "Now top is: " << mystack.top() << endl; 
-    mystack.pop(); 
+
+    stack.push(100); 
+    stack.top() += 1000; 
+    cout << "Now top is: " << stack.top() << endl; 
+    stack.pop(); 
   
-    // not a good way to check if stack is empty 
-    if(mystack.size() == 0) cout << "Stack is empty" << endl; 
-    // better we do this 
-    if(mystack.empty()) cout << "Stack is empty" << endl; 
+    
+    if(stack.size() == 0) cout << "Stack is empty" << endl; 
+    
+    if(stack.empty()) cout << "Stack is empty" << endl; 
   
     return 0; 
 } 
