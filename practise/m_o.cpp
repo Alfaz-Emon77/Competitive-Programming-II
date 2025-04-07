@@ -23,7 +23,7 @@ string addBig(string a, string b) {
 }
 
 int main() {
-    string a = "999999999";
-    string b = "1";
+    string a = "99999";
+    string b = "10";
     cout << "Sum: " << addBig(a, b) << endl;
 }
